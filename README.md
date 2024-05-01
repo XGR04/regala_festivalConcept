@@ -14,6 +14,4 @@ HTML + CSS
 
 # Acknowledgment
 
-CARE.org
-Github
-Visual Studio Code
+CARE.org + Github + Visual Studio Code
