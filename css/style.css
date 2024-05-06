@@ -1,130 +1,158 @@
-/* Advanced CSS for Unity Mosaic Festival */
-
-:root {
-    --primary-color: #770e00;
-    --secondary-color: #2d5f22;
-    --background-color: #f9f9f9;
-    --text-color: #333;
-    --link-color: #39c0ed;
-    --font-family: 'Arial', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: #fff;
+/* Navigation Bar */
+nav {
+    background: linear-gradient(135deg, #006d77, #83c5be);
     text-align: center;
-    padding: 20px;
-    animation: fadeInHeader 1s ease-in;
+    padding: 15px 0;
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-    margin: 20px;
-    justify-items: center;
+nav ul {
+    list-style-type: none;
 }
 
-article {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
-    transform: translateY(10px);
-    opacity: 0;
-    animation: fadeInArticle 1s ease-out forwards;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-article:nth-child(even) {
-    animation-delay: 0.2s;
-}
-
-article:nth-child(odd) {
-    animation-delay: 0.4s;
-}
-
-h1, h2 {
-    margin: 0;
-}
-
-p {
-    margin: 10px 0;
-}
-
-.header-image, .section-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-
-footer {
-    background-color: var(--secondary-color);
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    position: relative;
-    top: 20px;
-    animation: fadeInFooter 1.5s ease-in;
-}
-
-footer a {
-    color: var(--link-color);
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
-footer a:hover {
-    color: #f5e2a1;
+nav ul li a:hover {
+    color: #ffb703;
 }
 
-@keyframes fadeInHeader {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Header Section */
+header {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-@keyframes fadeInFooter {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+header h1 {
+    font-size: 2.5em;
 }
 
-@keyframes fadeInArticle {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
+/* General */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* About */
+#about {
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Support */
+#support {
+    background-color: white;
+    color: #333;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#support button {
+    background-color: #023047;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#support button:hover {
+    background-color: #ffb703;
+}
+
+/* Events */
+.day {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.day:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+#contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #023047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #ffb703;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #023047;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+
+    header {
+        padding: 60px 20px;
     }
 }
