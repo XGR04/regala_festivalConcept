@@ -20,7 +20,10 @@ The Unity Mosaic Festival, aiming to support and educate the world about the Pal
 - CARE.org: For their significant contributions and support to the Palestinian communities.
 https://www.care.org/
 - GitHub: For hosting and version control of project code.
-
+https://github.com/XGR04/regala_festivalConcept.git
 - Adobe Illustrator: For graphic design work. (Logo + Title + Merch)
+https://www.adobe.com/products/illustrator.html
 - Figma: For UX/UI design and wireframes.
+https://www.figma.com/
 - Visual Studio Code: For code editing and development.
+https://code.visualstudio.com/
