@@ -8,6 +8,10 @@ This festival is more than just a cultural event.  It is also meant to collect f
 
 The Unity Mosaic Festival, aiming to support and educate the world about the Palestinian centers, is an important event for both culture and the welfare of the people. To make it more accessible and open, the event has been scheduled for a public park. It begins with a vibrant cultural fair that features a variety of food, handicrafts, and music, all of which promote the history of and information about Palestinians.
 
+# Wireframe
+
+![Wireframe](/regala_festivalConcept/img/regala_festivalWireframe.png)
+
 # Technical Overview
 
 - HTML: For structuring the web content.
@@ -19,10 +23,10 @@ The Unity Mosaic Festival, aiming to support and educate the world about the Pal
     - https://code.visualstudio.com/
 # Acknowledgment
 
-CARE.org: For their significant contributions and support to the Palestinian communities.
-- https://www.care.org/
-GitHub: For hosting and version control of project code.
-- https://github.com/XGR04/regala_festivalConcept.git
+- CARE.org: For their significant contributions and support to the Palestinian communities.
+    - https://www.care.org/
+- GitHub: For hosting and version control of project code.
+    - https://github.com/XGR04/regala_festivalConcept.git
 - Adobe Illustrator: For graphic design work. (Logo + Title + Merch)
 - Figma: UX/UI design and wireframes.
 - Visual Studio Code
