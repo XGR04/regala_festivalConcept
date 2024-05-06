@@ -13,17 +13,18 @@ The Unity Mosaic Festival, aiming to support and educate the world about the Pal
 - HTML: For structuring the web content.
 - CSS: For styling the web pages.
 - Adobe Illustrator & Figma: For creating and managing design assets.
+    - https://www.adobe.com/products/illustrator.html
+
 - Visual Studio Code: As the code editor for developing the website.
 
 # Acknowledgment
 
-- CARE.org: For their significant contributions and support to the Palestinian communities.
-https://www.care.org/
-- GitHub: For hosting and version control of project code.
-https://github.com/XGR04/regala_festivalConcept.git
-- Adobe Illustrator: For graphic design work. (Logo + Title + Merch)
-https://www.adobe.com/products/illustrator.html
-- Figma: For UX/UI design and wireframes.
-https://www.figma.com/
-- Visual Studio Code: For code editing and development.
-https://code.visualstudio.com/
+CARE.org: For their significant contributions and support to the Palestinian communities.
+- https://www.care.org/
+GitHub: For hosting and version control of project code.
+- https://github.com/XGR04/regala_festivalConcept.git
+Adobe Illustrator: For graphic design work. (Logo + Title + Merch)
+Figma: For UX/UI design and wireframes.
+- https://www.figma.com/
+Visual Studio Code: For code editing and development.
+- https://code.visualstudio.com/
