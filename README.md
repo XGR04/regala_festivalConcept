@@ -10,7 +10,7 @@ The Unity Mosaic Festival, aiming to support and educate the world about the Pal
 
 # Wireframe
 
-![Alt text](https://raw.githubusercontent.com/XGR0/repository/branch/path/to/img/regala_festivalWireframe.png)
+![wireframe](img/regala_festivalWireframe.png)
 
 # Technical Overview
 
