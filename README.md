@@ -10,8 +10,15 @@ The Unity Mosaic Festival, aiming to support and educate the world about the Pal
 
 # Technical Overview
 
-HTML + CSS
+HTML: For structuring the web content.
+CSS: For styling the web pages.
+Adobe Illustrator & Figma: For creating and managing design assets.
+Visual Studio Code: As the code editor for developing the website.
 
 # Acknowledgment
 
-CARE.org + Github + Visual Studio Code
+CARE.org: For their significant contributions and support to the Palestinian communities.
+GitHub: For hosting and version control of project code.
+Adobe Illustrator: For graphic design work. (Logo + Title)
+Figma: For UX/UI design and wireframes.
+Visual Studio Code: For code editing and development.
