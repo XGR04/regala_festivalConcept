@@ -12,16 +12,29 @@ body {
 }
 
 nav {
-    background-color: #333;
-    color: white;
+    background-color: #3e3634; 
+    padding: 10px 20px; 
     text-align: center;
-    padding: 10px 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    margin-right: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb703;
 }
 
 .contact-form {
