@@ -11,22 +11,36 @@ body {
     line-height: 1.6;
 }
 
+/* NAV */
+
 nav {
-    background-color: #512b22;
+    background-color: #3e3634; 
+    padding: 10px 20px; 
     text-align: center;
-    padding: 15px 0;
-    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    margin-right: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
     font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb703;
 }
 
 header {
-    background: url('../img/Firefly\ 20240511210524.png') no-repeat center center/cover; 
+    background: url('../img/Firefly\ 20240511210524.png') no-repeat bottom center/cover; 
     color: white;
     padding: 100px 20px; 
     text-align: center;

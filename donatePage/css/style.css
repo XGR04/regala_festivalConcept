@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.navbar-logo {
+    height: 50px; 
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #3e3634; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box, .form-box, .fundraisers {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fundraisers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fundraiser {
+    background: #eee;
+    padding: 10px;
+}
+
+form > label, form > input, form > textarea, form > button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .fundraisers {
+        grid-template-columns: 1fr;
+    }
+}
