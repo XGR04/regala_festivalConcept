@@ -61,11 +61,10 @@ header {
     text-align: center;
 }
 
-.events-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+.event-day-link {
+    text-decoration: none; 
+    color: inherit;
+    display: block; 
 }
 
 .event-day {
@@ -73,6 +72,18 @@ header {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.event-day img {
+    width: 20%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+.event-day:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
 }
 
 footer {
