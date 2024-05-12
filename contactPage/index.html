@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unity Mosaic Festival</title>
+    <title>Contact - Unity Mosaic Festival</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="../regala_festivalConcept/donatePage/">Donate</a>
-        <a href="../regala_festivalConcept/supportPage/index.html">Support</a>
-        <a href="/regala_festivalConcept/contactPage/index.html">Contact</a>
-        <a href="../regala_festivalConcept/merchPage/">Merchandise</a>
+        <img src="img/Artboard 3.png" alt="Unity Mosaic Logo" class="navbar-logo">
+        <a href="../donatePage/index.html">Donate</a>
+        <a href="../supportPage/index.html">Support</a>
+        <a href="../contactPage/index.html">Contact</a>
+        <a href="../merchPage/index.html">Merchandise</a>
     </nav>
+
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="inquiry">Inquiry</label>
+            <input type="text" id="inquiry" name="inquiry" placeholder="Your inquiry">
+
+            <label for="message">Message / More Information</label>
+            <textarea id="message" name="message" placeholder="Enter more details here..."></textarea>
+
+            <label for="name">Name (Optional)</label>
+            <input type="text" id="name" name="name" placeholder="Your name (optional)">
+
+            <label for="contact-preference">Contact Preference</label>
+            <input type="text" id="contact-preference" name="contact_preference" placeholder="Email, phone, etc.">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Unity Mosaic Festival © 2024</p>
+    </footer>
+</body>
+</html>
