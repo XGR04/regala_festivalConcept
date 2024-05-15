@@ -12,16 +12,16 @@ body, html {
 }
 
 nav {
-    background-color: #3e3634; 
-    padding: 10px 20px; 
+    background-color: #3e3634;
+    padding: 10px 20px;
     text-align: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar-logo {
-    height: 50px; 
+    height: 50px;
     margin-right: 20px;
 }
 
@@ -42,42 +42,58 @@ header {
     padding: 20px 0;
 }
 
-.day-selector {
+.event-info {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #E5F7FF;
+}
+
+.event-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 18px;
+}
+
+.ticket-options {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
-}
-
-.day-selector button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 10px 20px;
-}
-
-.day-selector button.active {
-    font-weight: bold;
-}
-
-.event-details {
-    background: white;
-    width: 80%;
+    flex-wrap: wrap;
     margin: 20px auto;
+    width: 80%;
+    background: white;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.ticket-button {
-    background-color: #000;
-    color: #fff;
+.ticket {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+.ticket p {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #9F7AEA;
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    display: block;
-    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
 footer {
@@ -85,10 +101,22 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
-    .day-selector button {
-        padding: 5px 10px;
+    .ticket-options {
+        width: 100%;
+    }
+
+    .ticket {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .add-to-cart {
+        width: 80%;
     }
 }

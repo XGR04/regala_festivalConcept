@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -14,12 +15,16 @@ body {
 /* NAV */
 
 nav {
-    background-color: #3e3634; 
-    padding: 10px 20px; 
+    background-color: #dcc3a9; 
+    padding: 20px 30px; 
     text-align: center;
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(3px 3px 3px #00000033);
+    z-index: 100;
 }
 
 .navbar-logo {
@@ -28,80 +33,115 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #820000;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 nav a:hover {
-    color: #ffb703;
+    color: #0c8401;
 }
+
+/* HEADER */
 
 header {
     background: url('../img/Firefly\ 20240511210524.png') no-repeat bottom center/cover; 
-    color: white;
-    padding: 100px 20px; 
+    color: #a70000;
+    padding: 220px 20px; 
     text-align: center;
 }
+
+header p {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px; 
+}
+
+/* OTHER */
 
 .content-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
+}
+
+.content-container p {
+    padding: 10px 30px;
 }
 
 .content-block {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 5px #dcc3a9;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+
+/* EVENT */
+.ticket-button {
+    align-self: center;
+    background-color: #820000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.ticket-button:hover {
+    background-color: #0c8401;
+}
+
+
+h3 {
+    color: #820000;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 .events-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 50px;
 }
 
-.event-day-link {
-    text-decoration: none; 
-    color: inherit;
-    display: block; 
+.events-container p, h3 {
+    padding: 0 100px;
 }
 
 .event-day {
-    background-color: #CCC;
-    padding: 20px;
-    border-radius: 2px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 50px;
+    width: 80%;
 }
 
 .event-day img {
-    width: 50%; 
+    width: 40%; 
     height: auto; 
-    border-radius: 2px; 
+    border-radius: 10px; 
 }
-
-.event-day:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
-}
-
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-@media (max-width: 768px) {
-    .content-container, .events-container {
-        grid-template-columns: 1fr;
-    }
 }
