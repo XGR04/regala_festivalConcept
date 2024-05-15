@@ -229,3 +229,22 @@ footer {
     width: 100px;
     height: auto;
 }
+
+
+.fade-in-animation {
+    opacity: 0;
+    filter: brightness(0%); 
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(25%);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
