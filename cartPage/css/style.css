@@ -9,10 +9,8 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #f4f4f4;
-    position: relative; /* Ensures positioning is relative to the viewport */
+    position: relative;
 }
-
-/* NAV */
 
 nav {
     background-color: #dcc3a9; 
@@ -55,9 +53,31 @@ nav a:hover {
 }
 
 .cart-link img {
-    width: 40px; 
-    height: auto;
     position: absolute;
-    left: 50px;
-    top: 50px; 
+    width: 40px;
+    height: auto;
+    animation: moveDiagonally 10s linear infinite;
+}
+
+@keyframes moveDiagonally {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 50%;
+        top: 0;
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+    }
+    75% {
+        left: 0;
+        top: 50%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
 }

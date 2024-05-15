@@ -18,41 +18,5 @@
             <img src="/regala_festivalConcept/img/shopping-bag.png" alt="cart">
         </a>
     </nav>
-    <script>
-        var img = document.querySelector('.cart-link img');
-        var movingInterval = null;
-        var speedX = 0;
-        var speedY = 0;
-        var positionX = 0;
-        var positionY = 0;
-    
-        img.addEventListener('click', function() {
-            if (movingInterval === null) {
-                positionX = img.offsetLeft;
-                positionY = img.offsetTop;
-                speedX = Math.random() * 4 - 2; // Speed between -2 and 2
-                speedY = Math.random() * 4 - 2; // Speed between -2 and 2
-                movingInterval = setInterval(function() {
-                    positionX += speedX;
-                    positionY += speedY;
-                    
-                    // Keep the image within the viewport boundaries
-                    if (positionX < 0 || positionX > window.innerWidth - img.clientWidth) {
-                        speedX = -speedX; // Reverse direction on hitting horizontal boundaries
-                    }
-                    if (positionY < 0 || positionY > window.innerHeight - img.clientHeight) {
-                        speedY = -speedY; // Reverse direction on hitting vertical boundaries
-                    }
-    
-                    img.style.left = positionX + 'px';
-                    img.style.top = positionY + 'px';
-                }, 20); // Update every 20 milliseconds
-            } else {
-                clearInterval(movingInterval); // Stop the movement if image is clicked again
-                movingInterval = null;
-            }
-        });
-    </script>
-    
 </body>
 </html>
