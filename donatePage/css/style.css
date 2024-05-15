@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -14,11 +15,11 @@ body {
 
 nav {
     background-color: #dcc3a9; 
-    padding: 20px 30px; 
-    text-align: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    padding: 10px 20px; 
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
     position: sticky;
     top: 0;
     filter: drop-shadow(3px 3px 3px #00000033);
@@ -26,14 +27,14 @@ nav {
 }
 
 .navbar-logo {
-    height: 50px; 
-    margin-right: 20px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 nav a {
     color: #820000;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px; 
     font-size: 20px;
 }
 
@@ -41,54 +42,125 @@ nav a:hover {
     color: #0c8401;
 }
 
-
-.content {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.cart-link {
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.info-box, .form-box, .fundraisers {
-    margin-bottom: 20px;
+.cart-link:hover {
+    background-color: #0c8401;
+    border-radius: 20px; 
+}
+
+.cart-link img {
+    width: 40px; 
+    height: auto;
+}
+
+/* CONTENT */
+
+.content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-box {
+    background-color: #ffffff;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-box h2 {
+    color: #820000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #820000;
+}
+
+.form-box input,
+.form-box textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    background-color: #820000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #0c8401;
 }
 
 .fundraisers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .fundraiser {
-    background: #eee;
-    padding: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-form > label, form > input, form > textarea, form > button {
+.fundraiser:hover {
+    transform: scale(1.05);
+}
+
+.fundraiser h3 {
+    color: #820000;
+    margin-bottom: 10px;
+}
+
+.fundraiser a {
     display: block;
-    width: 100%;
-    margin-top: 10px;
-}
-
-input[type="text"], input[type="number"], textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 10px;
-    background-color: #5cb85c;
+    background-color: #820000;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #4cae4c;
+.fundraiser a:hover {
+    background-color: #0c8401;
 }
 
 /* FOOTER */
@@ -130,10 +202,4 @@ footer {
 .footer-sponsor-icon {
     width: 100px;
     height: auto;
-}
-
-@media (max-width: 768px) {
-    .fundraisers {
-        grid-template-columns: 1fr;
-    }
 }
