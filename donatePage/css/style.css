@@ -122,6 +122,24 @@ nav a:hover {
     background-color: #0c8401;
 }
 
+.form-box .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-box .checkbox-container input {
+    margin-right: 10px;
+}
+
+
+h3 {
+    text-align: center;
+    color: #0c8401;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .fundraisers {
     display: flex;
     justify-content: space-around;
@@ -149,18 +167,25 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.fundraiser a {
-    display: block;
-    background-color: #820000;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
+.fundraiser blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    position: relative;
     transition: background-color 0.3s ease;
 }
 
-.fundraiser a:hover {
-    background-color: #0c8401;
+.fundraiser blockquote a {
+    color: #820000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fundraiser blockquote a:hover {
+    color: #0c8401;
+    text-decoration: underline;
 }
 
 /* FOOTER */

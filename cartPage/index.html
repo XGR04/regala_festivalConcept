@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cart Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/regala_festivalConcept/index.html">
+            <img src="/regala_festivalConcept/img/Artboard 3.png" alt="Unity Mosaic Festival Logo" class="navbar-logo">
+        </a>
+        <a href="../donatePage/index.html">Donate</a>
+        <a href="../contactPage/index.html">Contact</a>
+        <a href="../merchPage/index.html">Merchandise</a>
+        <a href="../cartPage/index.html" class="cart-link">
+            <img src="/regala_festivalConcept/img/shopping-bag.png" alt="cart">
+        </a>
+    </nav>
+    <main>
+        <button onclick="addToCart()">Add Item to Cart</button>
+    </main>
+    <script>
+    let cartCount = 0;
+
+        function addToCart() {
+            cartCount++;
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+    </script>
+</body>
+</html>

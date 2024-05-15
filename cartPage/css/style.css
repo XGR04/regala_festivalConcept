@@ -1,0 +1,23 @@
+.cart-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.cart-link img {
+    width: 40px;
+    height: auto;
+}
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+}
