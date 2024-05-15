@@ -164,6 +164,9 @@ nav a:hover {
     color: #820000;
     text-transform: uppercase;
     letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .experience-grid {
@@ -172,6 +175,7 @@ nav a:hover {
     gap: 20px;
     justify-items: center;
     align-items: stretch;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .experience {
@@ -181,11 +185,8 @@ nav a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.experience:hover {
-    transform: translateY(-10px);
-    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
 }
 
 .experience img {
@@ -193,6 +194,11 @@ nav a:hover {
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.experience:hover img {
+    transform: scale(1.1);
 }
 
 .experience p {
@@ -204,9 +210,43 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+.experience:hover {
+    transform: translateY(-10px);
+    background-color: #e0e0e0;
+}
+
+.experience:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(130, 0, 0, 0.2);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.experience:hover:before {
+    opacity: 1;
+}
+
 .experience-grid .experience:nth-child(odd) {
     grid-column: span 2;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* FOOTER */
 

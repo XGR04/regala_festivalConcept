@@ -19,6 +19,15 @@
     display: block; 
 }
 
+body p {
+    height: 100%; /* Ensures the body takes at least the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Enables flexbox properties */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+}
+
 @keyframes bounce1 { 0%, 100% { top: 10%; left: 10%; } 50% { top: 10%; left: 90%; } }
 @keyframes bounce2 { 0%, 100% { top: 80%; left: 60%; } 50% { top: 10%; left: 60%; } }
 @keyframes bounce3 { 0%, 100% { top: 50%; left: 30%; } 50% { top: 50%; left: 70%; } }
@@ -30,13 +39,13 @@
 @keyframes bounce9 { 0%, 100% { top: 55%; left: 80%; } 50% { top: 55%; left: 20%; } }
 @keyframes bounce10 { 0%, 100% { top: 25%; left: 40%; } 50% { top: 75%; left: 40%; } }
 
-.pos1 { animation: bounce1 10s linear infinite; }
-.pos2 { animation: bounce2 10s linear infinite; }
-.pos3 { animation: bounce3 10s linear infinite; }
-.pos4 { animation: bounce4 10s linear infinite; }
-.pos5 { animation: bounce5 10s linear infinite; }
-.pos6 { animation: bounce6 10s linear infinite; }
-.pos7 { animation: bounce7 10s linear infinite; }
-.pos8 { animation: bounce8 10s linear infinite; }
-.pos9 { animation: bounce9 10s linear infinite; }
-.pos10 { animation: bounce10 10s linear infinite; }
+.pos1 { animation: bounce1 15s linear infinite; }
+.pos2 { animation: bounce2 15s linear infinite; }
+.pos3 { animation: bounce3 15s linear infinite; }
+.pos4 { animation: bounce4 15s linear infinite; }
+.pos5 { animation: bounce5 15s linear infinite; }
+.pos6 { animation: bounce6 15s linear infinite; }
+.pos7 { animation: bounce7 15s linear infinite; }
+.pos8 { animation: bounce8 15s linear infinite; }
+.pos9 { animation: bounce9 15s linear infinite; }
+.pos10 { animation: bounce10 15s linear infinite; }
