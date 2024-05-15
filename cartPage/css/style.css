@@ -12,72 +12,30 @@ body, html {
     position: relative;
 }
 
-nav {
-    background-color: #dcc3a9; 
-    padding: 10px 20px; 
-    text-align: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-    position: sticky;
-    top: 0;
-    filter: drop-shadow(3px 3px 3px #00000033);
-    z-index: 100;
-}
-
-.navbar-logo {
-    height: 50px;
-    margin-right: 10px;
-}
-
-nav a {
-    color: #820000;
-    text-decoration: none;
-    margin: 0 5px; 
-    font-size: 20px;
-}
-
-nav a:hover {
-    color: #0c8401;
+.hidden-pos {
+    display: none;
 }
 
 .cart-link {
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.cart-link:hover {
-    background-color: #0c8401;
-    border-radius: 20px; 
+    position: absolute;
+    display: block;
 }
 
 .cart-link img {
-    position: absolute;
     width: 40px;
     height: auto;
-    animation: moveDiagonally 10s linear infinite;
+    cursor: pointer; /* Make it clear it's clickable */
 }
 
-@keyframes moveDiagonally {
-    0% {
-        left: 0;
-        top: 0;
-    }
-    25% {
-        left: 50%;
-        top: 0;
-    }
-    50% {
-        left: 50%;
-        top: 50%;
-    }
-    75% {
-        left: 0;
-        top: 50%;
-    }
-    100% {
-        left: 0;
-        top: 0;
-    }
+/* Position examples */
+.pos1 { top: 10%; left: 10%; }
+.pos2 { top: 80%; left: 60%; }
+.pos3 { top: 50%; left: 30%; }
+.pos4 { top: 20%; left: 90%; }
+
+#pos1:checked ~ .pos1,
+#pos2:checked ~ .pos2,
+#pos3:checked ~ .pos3,
+#pos4:checked ~ .pos4 {
+    visibility: visible;
 }
