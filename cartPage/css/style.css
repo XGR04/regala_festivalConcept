@@ -1,19 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
-    background-color: #f4f4f4;
-    position: relative;
-}
-
 .hidden-pos {
-    display: none;
+    display: none; 
 }
 
 .cart-link {
@@ -24,18 +10,30 @@ body, html {
 .cart-link img {
     width: 40px;
     height: auto;
-    cursor: pointer; /* Make it clear it's clickable */
+    cursor: pointer; 
 }
 
-/* Position examples */
+
 .pos1 { top: 10%; left: 10%; }
 .pos2 { top: 80%; left: 60%; }
 .pos3 { top: 50%; left: 30%; }
 .pos4 { top: 20%; left: 90%; }
+.pos5 { top: 75%; left: 20%; }
+.pos6 { top: 35%; left: 10%; }
+.pos7 { top: 90%; left: 50%; }
+.pos8 { top: 15%; left: 60%; }
+.pos9 { top: 55%; left: 80%; }
+.pos10 { top: 25%; left: 40%; }
 
 #pos1:checked ~ .pos1,
 #pos2:checked ~ .pos2,
 #pos3:checked ~ .pos3,
-#pos4:checked ~ .pos4 {
+#pos4:checked ~ .pos4,
+#pos5:checked ~ .pos5,
+#pos6:checked ~ .pos6,
+#pos7:checked ~ .pos7,
+#pos8:checked ~ .pos8,
+#pos9:checked ~ .pos9,
+#pos10:checked ~ .pos10 {
     visibility: visible;
 }
