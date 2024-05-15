@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -11,13 +11,19 @@ body {
     line-height: 1.6;
 }
 
+/* NAV */
+
 nav {
-    background-color: #3e3634; 
-    padding: 10px 20px; 
+    background-color: #dcc3a9; 
+    padding: 20px 30px; 
     text-align: center;
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(3px 3px 3px #00000033);
+    z-index: 100;
 }
 
 .navbar-logo {
@@ -26,16 +32,16 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #820000;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 nav a:hover {
-    color: #ffb703;
+    color: #0c8401;
 }
+
 
 .contact-form {
     background: white;

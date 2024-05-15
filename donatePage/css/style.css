@@ -2,12 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     line-height: 1.6;
+}
+
+/* NAV */
+
+nav {
+    background-color: #dcc3a9; 
+    padding: 20px 30px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(3px 3px 3px #00000033);
+    z-index: 100;
 }
 
 .navbar-logo {
@@ -15,22 +30,17 @@ body {
     margin-right: 20px;
 }
 
-nav {
-    background-color: #3e3634; 
-    padding: 10px 20px; 
-    text-align: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+nav a {
+    color: #820000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
+nav a:hover {
+    color: #0c8401;
 }
+
 
 .content {
     width: 80%;
