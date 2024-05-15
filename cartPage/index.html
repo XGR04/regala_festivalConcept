@@ -18,16 +18,14 @@
             <img src="/regala_festivalConcept/img/shopping-bag.png" alt="cart">
         </a>
     </nav>
-    <main>
-        <button onclick="addToCart()">Add Item to Cart</button>
-    </main>
     <script>
-    let cartCount = 0;
-
-        function addToCart() {
-            cartCount++;
-            document.getElementById('cart-count').textContent = cartCount;
-        }
+        document.querySelector('.cart-link img').addEventListener('mouseenter', function() {
+            var newX = Math.floor(Math.random() * window.innerWidth);
+            var newY = Math.floor(Math.random() * window.innerHeight);
+            this.style.left = newX + 'px';
+            this.style.top = newY + 'px';
+        });
     </script>
+    
 </body>
 </html>
