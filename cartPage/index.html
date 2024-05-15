@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Cart Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
@@ -19,11 +19,38 @@
         </a>
     </nav>
     <script>
-        document.querySelector('.cart-link img').addEventListener('mouseenter', function() {
-            var newX = Math.floor(Math.random() * window.innerWidth);
-            var newY = Math.floor(Math.random() * window.innerHeight);
-            this.style.left = newX + 'px';
-            this.style.top = newY + 'px';
+        var img = document.querySelector('.cart-link img');
+        var movingInterval = null;
+        var speedX = 0;
+        var speedY = 0;
+        var positionX = 0;
+        var positionY = 0;
+    
+        img.addEventListener('click', function() {
+            if (movingInterval === null) {
+                positionX = img.offsetLeft;
+                positionY = img.offsetTop;
+                speedX = Math.random() * 4 - 2; // Speed between -2 and 2
+                speedY = Math.random() * 4 - 2; // Speed between -2 and 2
+                movingInterval = setInterval(function() {
+                    positionX += speedX;
+                    positionY += speedY;
+                    
+                    // Keep the image within the viewport boundaries
+                    if (positionX < 0 || positionX > window.innerWidth - img.clientWidth) {
+                        speedX = -speedX; // Reverse direction on hitting horizontal boundaries
+                    }
+                    if (positionY < 0 || positionY > window.innerHeight - img.clientHeight) {
+                        speedY = -speedY; // Reverse direction on hitting vertical boundaries
+                    }
+    
+                    img.style.left = positionX + 'px';
+                    img.style.top = positionY + 'px';
+                }, 20); // Update every 20 milliseconds
+            } else {
+                clearInterval(movingInterval); // Stop the movement if image is clicked again
+                movingInterval = null;
+            }
         });
     </script>
     

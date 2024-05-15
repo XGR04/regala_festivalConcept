@@ -6,19 +6,18 @@
 }
 
 body {
-
     background-color: #f4f4f4;
 }
 
 /* NAV */
 
 nav {
-    background-color: #dcc3a9; 
-    padding: 10px 20px; 
+    background-color: #dcc3a9;
+    padding: 10px 20px;
     text-align: end;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
     position: sticky;
     top: 0;
     filter: drop-shadow(3px 3px 3px #00000033);
@@ -33,7 +32,7 @@ nav {
 nav a {
     color: #820000;
     text-decoration: none;
-    margin: 0 5px; 
+    margin: 0 5px;
     font-size: 20px;
 }
 
@@ -49,45 +48,56 @@ nav a:hover {
 
 .cart-link:hover {
     background-color: #0c8401;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 .cart-link img {
-    width: 40px; 
+    width: 40px;
     height: auto;
 }
 
-.categories {
+/* MERCH SECTION */
+
+.merch-section {
     width: 80%;
     margin: 20px auto;
     text-align: center;
 }
 
-.grid-container {
+.merch-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
-.grid-item img {
-    width: 100%;  /* Ensures images resize within their containers */
+.merch-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.merch-item img {
+    width: 100%;
     height: auto;
 }
 
-.button-container {
-    margin: 20px 0;
+.merch-price {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
 }
 
-button {
+.add-to-cart {
     padding: 10px 20px;
-    margin: 0 5px;
     background-color: #444;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+.add-to-cart:hover {
     background-color: #666;
 }
 
@@ -132,9 +142,8 @@ footer {
     height: auto;
 }
 
-
 @media (max-width: 768px) {
-    .grid-container {
+    .merch-grid {
         grid-template-columns: 1fr;
     }
 }
